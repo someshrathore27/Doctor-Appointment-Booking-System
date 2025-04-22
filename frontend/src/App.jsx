@@ -21,7 +21,7 @@ import MentalHealthPrediction from './pages/MentalHealthPrediction'
 import PredictionHistory from './pages/PredictionHistory'
 import PredictionDetails from './pages/PredictionDetails'
 
-const App = () => {
+const App = () => { 
   return (
     <div className='mx-4 sm:mx-[10%]'>
       <ToastContainer />
