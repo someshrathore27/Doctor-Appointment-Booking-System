@@ -17,7 +17,6 @@ const AdminContextProvider = (props) => {
 
     // Getting all Doctors data from Database using API
     const getAllDoctors = async () => {
-
         try {
 
             const { data } = await axios.get(backendUrl + '/api/admin/all-doctors', { headers: { aToken } })
@@ -32,7 +31,6 @@ const AdminContextProvider = (props) => {
         }
 
     }
-
     // Function to change doctor availablity using API
     const changeAvailability = async (docId) => {
         try {
@@ -50,7 +48,6 @@ const AdminContextProvider = (props) => {
             toast.error(error.message)
         }
     }
-
     // Function to delete a doctor using API
     const deleteDoctor = async (doctorId) => {
         try {
@@ -69,6 +66,7 @@ const AdminContextProvider = (props) => {
         }
     }
 
+    
     // Getting all appointment data from Database using API
     const getAllAppointments = async () => {
 
